@@ -1,0 +1,103 @@
+#bracket style options, using k&r
+--style=kr #or -A3
+
+#indent options, in C/C++ programming, I must using space everywhere. Do not using tab
+#--indent=space=#, indent using # spaces per indent. # must between 2 to 20.
+--indent=space=4 #or -s4
+
+#attach bracket to a namespace statement. This is done regardless of bracket
+#style being used.
+#namespace FooName {
+#    ...
+#}
+--attach-namespaces  #or -xn
+
+#attach bracket to a class statement. This is done regardless of bracket
+#style being used.
+#class FooName {
+#    ...
+#}
+--attach-classes  #or -xc
+
+#attach bracket to a class or struct inline function definitions. This is not done
+#for run-in type brackets. This option is effective for C++ file only.
+--attach-inlines  #or -xl
+
+
+#Indentation options
+#------------------------------
+#indent class or struct access modifier: 'public:', 'protected:', 'private:', one
+#half indent. This option is effective for C++ file only. 
+--indent-modifiers  #or -xG
+
+#indent switch blocks so that the 'case X:' statements are indent in switch
+#block. The entire case block is indent.
+--indent-switches  #or -S
+
+#indent multi-line preprocessor definitions end with a backslasha.
+--indent-preproc-define  #or -w
+
+#indent C++ comments beginning in column one. By default, C++ comments beginning
+#in column one are not indent.
+--indent-col1-comments  #or -Y
+
+#set the minimal indent that is added when a header is built of multiple lines.
+#This indent helps to easily seperate the header from the command statement that
+#follow. 1 - indent at least one additional indent.
+--min-conditional-indent=1  #or -m1
+
+#set the maximum of 80 spaces to indent a continuation line. 80 indicates the
+#maximum columns and it must not be greater than 120 columns. 
+--max-instatement-indent=80  #or -M80
+
+#Padding options
+#--------------------------------------------------
+#padding empty lines around header blocks(e.g. 'if', 'for', 'while',...)
+--break-blocks  #or -f
+
+#padding spaces around operators
+--pad-oper  #or -p
+
+#insert space padding after parent header only(e.g. 'if', 'for', 'while'...)
+--pad-header  #or -H
+
+#align a pointer or reference operator(*, &, or ^) to either the variable
+#type(left), or variable name(right), or between the type and name(middle).
+#this options is used for C/C++, C++/CLI, C# files.
+--align-pointer=type #or -k1
+#for example
+#char *foo1;
+#char& foo2;
+#string ^ s3;
+#when --align-pointer=type, they become
+#char* foo1;
+#char& foo2;
+#string ^s3;
+
+#Formatting options
+#----------------------------------------------------
+#add bracket to unbracketed one line conditional statement(e.g. 'if','for','while').
+#This statement must be on a single line.
+--add-brackets  #or -j
+#for example
+#if (condition)
+#    isFoo = true;
+#becomes
+#if (condition) {
+#    isFoo = true;
+#}
+
+#convert tabs into spaces in the non-indentation part of line. The number of spaces
+#inserted will maintain the spacing of the tab.
+--convert-tabs  #or -c
+
+#the option max-code-length will break a line if the code exceed 80 columns.
+--max-code-length=80  #or -xC80
+
+#indent a C type, C# or Java type. C type file are C,C++, C++/CLI, Objective-C.
+--mode=c
+
+#Other options
+#--------------------------
+#for each directory in command line, process all sub-directories recursively.
+--recursive  #or -r, -R
