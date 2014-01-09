@@ -11,6 +11,7 @@ g++(or gcc-c++)
 llvm
 clang
 ninja
+build-essential(only for Ubuntu, not Fedora)
 
 
 3.Project Manager
@@ -27,7 +28,7 @@ ddd
 
 
 5.static programm debugger
-splint
+splint(checking the C/C++ source code file)
 strace
 EFence(ElectricFence)
 ctags
@@ -36,7 +37,7 @@ cxref
 cflow
 
 6.Program Checker
-valgrind
+valgrind(memory Checker, especially for dynamic memory allocation)
 gprof2dot(After installing this software, you can use gprof in Fedora. Just add
           -pg in CFLAGS or CXXFLAGS in Makefile)
 
