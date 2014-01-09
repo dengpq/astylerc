@@ -1,0 +1,107 @@
+1.Editor
+vim
+gvim
+wmctrl(for gvim auto fullscreen)
+gedit
+
+
+2.Compiler and Linker
+gcc
+g++(or gcc-c++)
+llvm
+clang
+ninja
+
+
+3.Project Manager
+make
+cmake
+autoconf
+automake
+libtool
+
+
+4.program debugger
+gdb
+ddd
+
+
+5.static programm debugger
+splint
+strace
+EFence(ElectricFence)
+ctags
+cscope
+cxref
+cflow
+
+6.Program Checker
+valgrind
+gprof2dot(After installing this software, you can use gprof in Fedora. Just add
+          -pg in CFLAGS or CXXFLAGS in Makefile)
+
+
+7.lex and grammar analyzer
+flex
+yacc(or bison)
+
+
+8.version control system
+subversion
+git
+
+
+9.lib file
+boost
+ncurses-devel
+gcc-multilib
+g++-multilib
+
+
+10.Unit Test
+cppunit
+junit
+
+
+11.Programming Language
+Python
+Perl
+Ruby
+Tcl_tk
+PHP
+Java
+bash
+tcsh
+ksh
+zsh
+
+
+12.Data Visualization
+gnuplot
+graphviz
+
+
+13.Scientific Computation
+scilab
+
+
+14.file reader
+Adobe pdf reader
+calibre
+chmsee
+
+
+15.office
+libreoffice
+
+
+16.webrowser
+firefox(Don't use chrome in Linux, it occupied huge memory)
+
+
+17.mail client
+thunderbird
+
+
+18.TeX
+TeXLive
